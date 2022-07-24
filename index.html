@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Script -->
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+      <h1 class="header__title">Kanban Board</h1>
+    </header>
+    <main class="main">
+
+      <!--////////////////////////////////////-->
+      <!--// COLUMN 1-->
+      <!--////////////////////////////////////-->
+      <div class="main__board main__board-backlog" data-board-id="1">
+        <header class="main__board-header">
+          <h2 class="main__board-title">Backlog</h2>
+        </header>
+
+        <ul class="main__task-list">
+          <!-- <li class="main__task-item">
+            do this
+          </li> -->
+
+        </ul>
+
+        <button class="main__button main__button-add">
+          + Add Item
+        </button>
+
+        <form action="/" class="main__form-task hidden">
+          <button type="button" class="main__button main__button-save">
+            Save Item
+          </button>
+          <div class="main__textarea-container">
+            <textarea name="taskTextContent" class="main__textarea"></textarea>
+          </div>
+        </form>
+
+      </div>
+      
+      
+      <!--////////////////////////////////////-->
+      <!--// COLUMN 2-->
+      <!--////////////////////////////////////-->
+      <div class="main__board main__board-in-progress" data-board-id="2">
+        <header class="main__board-header">
+          <h2 class="main__board-title">In Progress</h2>
+        </header>
+
+        <ul class="main__task-list">
+          <!-- <li class="main__task-item">
+            do this
+          </li> -->
+        </ul>
+
+        <button class="main__button main__button-add">
+          + Add Item
+        </button>
+
+        <form action="/" class="main__form-task hidden">
+          <button type="button" class="main__button main__button-save">
+            Save Item
+          </button>
+          <div class="main__textarea-container">
+            <textarea name="taskTextContent" class="main__textarea"></textarea>
+          </div>
+        </form>
+      </div>
+
+      
+      <!--////////////////////////////////////-->
+      <!--// COLUMN 3-->
+      <!--////////////////////////////////////-->
+      <div class="main__board main__board-complete" data-board-id="3">
+        <header class="main__board-header">
+          <h2 class="main__board-title">Complete</h2>
+        </header>
+
+        <ul class="main__task-list">
+          <!-- <li class="main__task-item">
+            do this
+          </li> -->
+        </ul>
+
+        <button class="main__button main__button-add">
+          + Add Item
+        </button>
+
+        <form action="/" class="main__form-task hidden">
+          <button type="button" class="main__button main__button-save">
+            Save Item
+          </button>
+          <div class="main__textarea-container">
+            <textarea name="taskTextContent" class="main__textarea"></textarea>
+          </div>
+        </form>
+      </div>
+
+
+      <!--////////////////////////////////////-->
+      <!--// COLUMN 4-->
+      <!--////////////////////////////////////-->
+      <div class="main__board main__board-on-hold" data-board-id="4">
+        <header class="main__board-header">
+          <h2 class="main__board-title">On Hold</h2>
+        </header>
+
+        <ul class="main__task-list">
+          <!-- <li class="main__task-item">
+            do this
+          </li> -->
+        </ul>
+
+        <button class="main__button main__button-add">
+          + Add Item
+        </button>
+
+        <form action="/" class="main__form-task hidden">
+          <button type="button" class="main__button main__button-save">
+            Save Item
+          </button>
+          <div class="main__textarea-container">
+            <textarea name="taskTextContent" class="main__textarea"></textarea>
+          </div>
+        </form>
+      </div>
+
+    </main>
+</body>
+</html>

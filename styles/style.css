@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
+:root {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*, ::before, ::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --column-1: #a2622d;
+  --column-2: #1b6161;
+  --column-3: #248224;
+  --column-4: #a22d22;
+}
+
+body {
+  font-family: Quicksand, sans-serif;
+  background: url("../images/trees.jpg");
+  background-size: cover;
+  background-position: 50% 60%;
+  background-attachment: fixed;
+  color: white;
+}
+
+.header__title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+  gap: 1em;
+  width: 100%;
+  padding: 0 2em;
+}
+
+.main__board {
+  flex: 1 0 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  border-radius: 0.5em;
+  padding: 0.7em;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.main__board-header {
+  text-align: center;
+  padding: 1em;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.main__board-header {
+  border-radius: inherit;
+}
+
+.main__board-backlog > .main__board-header {
+  background-color: var(--column-1);
+}
+
+.main__board-in-progress > .main__board-header {
+  background-color: var(--column-2);
+}
+
+.main__board-complete > .main__board-header {
+  background-color: var(--column-3);
+}
+
+.main__board-on-hold > .main__board-header {
+  background-color: var(--column-4);
+}
+
+.main__task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  border-radius: inherit;
+  height: min-content;
+}
+
+.main__task-item {
+  padding: 1em 0.5em;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: inherit;
+  list-style: none;
+}
+
+.main__task-item:hover {
+  cursor: pointer;
+}
+
+.main__task-item-edit-mode {
+  background-color: #fff;
+  color: #000;
+}
+
+.main__task-item-edit-mode:hover {
+  cursor: text;
+}
+
+.main__button {
+  padding: 0.5em 0.5em;
+  border-radius: 0.3em;
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+  border-color: rgba(0, 0, 0, 0);
+  transition: transform 0.2s;
+}
+
+.main__button:hover {
+  cursor: pointer;
+}
+
+.main__button:active {
+  transform: scale(0.9);
+}
+
+.main__button-add {
+  align-self: flex-start;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.main__button-add:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.main__button-save {
+  align-self: flex-end;
+  background-color: #1b6161;
+}
+
+.main__form-task {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  transition: all 0.2s;
+}
+
+.main__textarea-container {
+  border-radius: 0.5em;
+  background-color: #dddddd;
+  padding: 10px;
+}
+
+.main__textarea {
+  width: 100%;
+  resize: none;
+  font-size: inherit;
+  font-family: inherit;
+  border-radius: inherit;
+  border: none;
+}
+
+.hidden {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */
