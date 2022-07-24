@@ -23,7 +23,7 @@ kanban style task manager
 
 <br/>
 
-## Technologies:
+## Challanges:
 
 - SASS
 - DnD API
